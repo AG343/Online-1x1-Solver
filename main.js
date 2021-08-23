@@ -1,5 +1,6 @@
 var cube = document.querySelector('.cube');
 var currentclass = '';
+var radiobtn = document.querySelector('.radio-group');
 var num;
 function changeit() {
         num=Math.floor(Math.random()*6)+1
@@ -35,6 +36,16 @@ function changeit() {
 
 
 
-function roll(){
+function scramble(){
    changeit()
+}
+function solve(){
+  var front='front'
+var showClass = 'show-' + front;
+console.log(showClass)
+if ( currentclass ) {
+  cube.classList.remove( currentclass );
+}
+cube.classList.add(showClass);
+currentclass = showClass;
 }

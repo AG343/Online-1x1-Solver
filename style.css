@@ -40,12 +40,12 @@ body {  font-family: 'Shippori Mincho', serif;
   border-radius: 20px;
 }
 
-.cube__face--front  { background: black; }
-.cube__face--right  { background: black; }
-.cube__face--back   { background: black; }
-.cube__face--left   { background: black; }
-.cube__face--top    { background: black; }
-.cube__face--bottom { background: black; }
+.cube__face--front  { background: green; }
+.cube__face--right  { background: red; }
+.cube__face--back   { background: blue; }
+.cube__face--left   { background: orange; }
+.cube__face--top    { background: white; }
+.cube__face--bottom { background: yellow; }
 
 .cube__face--front  { transform: rotateY(  0deg) translateZ(100px); }
 .cube__face--right  { transform: rotateY( 90deg) translateZ(100px); }
