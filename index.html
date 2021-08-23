@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
     
-        <title>Virtual 1x1</title>
+        <title>Virtual Dice Roller</title>
         <link rel="icon" href='flaticon_search-512.webp'>
         <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
         <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
@@ -34,20 +34,22 @@
     </head>
     <body style='background-color:white;'>
         <center>
-            <h1>Online 1x1 Solver</h1>
+            <h1>Virtual Dice Roller</h1>
             <div class="scene">
                 <div class="cube">
-                  <div class="cube__face cube__face--front"></div>
-                  <div class="cube__face cube__face--back"></div>
-                  <div class="cube__face cube__face--right"></div>
-                  <div class="cube__face cube__face--left"></div>
-                  <div class="cube__face cube__face--top"></div>
-                  <div class="cube__face cube__face--bottom"></div>
+                  <div class="cube__face cube__face--front">2</div>
+                  <div class="cube__face cube__face--back">5</div>
+                  <div class="cube__face cube__face--right">3</div>
+                  <div class="cube__face cube__face--left">4</div>
+                  <div class="cube__face cube__face--top">1</div>
+                  <div class="cube__face cube__face--bottom">6</div>
                 </div>
               </div>
-            
-              <button class='btn btn-outline-dark' onclick='scramble()'>Scramble</button>
-              <button class='btn btn-outline-dark' onclick='solve()'>Solve</button>
+              
+              <button class='btn btn-outline-dark' onclick='roll()'>Roll</button>
+              <h6>NOTE: If the dice does not roll after you press the button, then it has rolled and returned the same number.</h1>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+              <p>Credits to Dave Desandro for the <a href='https://codepen.io/desandro/pen/KRWjzm'>template</a></p> 
 <script src='main.js'></script>
 </center>
     </body>
